@@ -29,77 +29,53 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
-        };
-    };
-
     macros {
         updir: updir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOT &kp DOT &kp FSLH>;
-            label = "UPDIR";
         };
 
         cd: cd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp D &kp SPACE>;
-            label = "CD";
         };
 
         ls: ls {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp S &kp SPACE>;
-            label = "LS";
         };
 
         vim: vim {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp V &kp I &kp M &kp SPACE>;
-            label = "VIM";
         };
 
-        cp: ssh {
+        cp: cp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp P &kp SPACE>;
-            label = "SSH";
         };
 
         mv: mv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp V &kp SPACE>;
-            label = "MV";
         };
 
         zero_x: hex {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N0 &kp X>;
-            label = "HEX";
         };
     };
 
     behaviors {
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -112,7 +88,6 @@
 
         hrm_lshft: hrm_lshft {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_LSHFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -126,7 +101,6 @@
 
         hrm_rshft: hrm_rshft {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_RSHFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -147,7 +121,7 @@
         base_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "BASE";
+            display-name = "BASE";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -171,7 +145,7 @@
         symbols {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SYM";
+            display-name = "SYM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -193,6 +167,8 @@
         };
 
         Navigation {
+        	display-name = "NAVI";
+
             bindings = <
             &kp PG_UP     &kp HOME      &kp UP        &kp END       &kp C_VOL_UP    &kp C_BRIGHTNESS_INC  &kp N7  &kp N8  &kp N9  &zero_x
             &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp C_VOL_DN    &kp C_BRIGHTNESS_DEC  &kp N4  &kp N5  &kp N6  &kp N0
@@ -202,14 +178,14 @@
         };
 
         Functions {
+            display-name = "FUNC";
+
             bindings = <
         &trans  &trans  &trans  &vim    &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
         &trans  &trans  &ls     &cd     &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
 &trans  &trans  &trans  &mv     &cp     &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
-
-            label = "FUNC";
         };
     };
 };
