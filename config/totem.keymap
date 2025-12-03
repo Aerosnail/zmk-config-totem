@@ -28,6 +28,12 @@
     tapping-term-ms = <170>;
 };
 
+&lt {
+	quick-tap-ms = <200>;
+	tapping-term-ms = <200>;
+	flavor = "tap-preferred";
+};
+
 / {
     macros {
         updir: updir {
@@ -181,10 +187,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp PRCNT  &kp LBKT  &kp RBKT  &kp COLON  &kp AMPS     &kp CARET  &kp COMMA  &kp LT      &kp GT     &kp GRAVE
-        &kp QMARK  &kp LPAR  &kp RPAR  &kp SEMI   &kp PIPE     &kp HASH   &kp EQUAL  &kp MINUS   &kp PLUS   &kp EXCL
-&trans  &kp AT     &kp LBRC  &kp RBRC  &kp DLLR   &kp TILDE    &updir     &kp BSLH   &kp ASTRK   &kp SLASH  &kp CARET  &trans
-                             &trans    &trans     &trans       &trans     &kp DEL    &caps_word
+        &kp PRCNT  &kp LBKT  &kp RBKT  &kp COLON  &kp AMPS     &kp CARET  &kp DOUBLE_QUOTES  &kp LT      &kp GT     &kp GRAVE
+        &kp QMARK  &kp LPAR  &kp RPAR  &kp SEMI   &kp PIPE     &kp HASH   &kp EQUAL          &kp MINUS   &kp PLUS   &kp EXCL
+&trans  &kp AT     &kp LBRC  &kp RBRC  &kp DLLR   &kp TILDE    &updir     &kp BSLH           &kp ASTRK   &kp SLASH  &kp CARET  &trans
+                             &trans    &trans     &trans       &trans     &kp DEL            &trans
             >;
         };
 
