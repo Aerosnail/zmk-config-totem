@@ -124,7 +124,7 @@
 
         cd {
             bindings = <&cd>;
-            key-positions = <12 2>;
+            key-positions = <13 3>;
         };
 
         ls {
@@ -134,7 +134,7 @@
 
         vim {
             bindings = <&vim>;
-            key-positions = <13 3>;
+            key-positions = <12 2>;
         };
 
         caps {
