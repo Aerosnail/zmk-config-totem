@@ -189,10 +189,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp PRCNT  &kp LBKT  &kp RBKT  &kp COLON  &kp AMPS     &kp CARET  &kp DOUBLE_QUOTES  &kp LT     &kp GT     &kp GRAVE
-        &kp QMARK  &kp LPAR  &kp RPAR  &kp SEMI   &kp PIPE     &kp HASH   &kp EQUAL          &kp MINUS  &kp PLUS   &kp EXCL
-&trans  &kp AT     &kp LBRC  &kp RBRC  &kp DLLR   &kp TILDE    &updir     &kp BSLH           &kp ASTRK  &kp SLASH  &kp CARET  &trans
-                             &trans    &trans     &trans       &trans     &kp DEL            &trans
+        &kp PRCNT  &kp LBKT  &kp RBKT  &kp COLON  &kp AMPS     &kp DOUBLE_QUOTES  &kp COMMA  &kp LT     &kp GT     &kp GRAVE
+        &kp QMARK  &kp LPAR  &kp RPAR  &kp SEMI   &kp PIPE     &kp HASH           &kp EQUAL  &kp MINUS  &kp PLUS   &kp EXCL
+&trans  &kp AT     &kp LBRC  &kp RBRC  &kp DLLR   &kp TILDE    &updir             &kp BSLH   &kp ASTRK  &kp SLASH  &kp CARET  &trans
+                             &trans    &trans     &trans       &trans             &kp DEL    &trans
             >;
         };
 
