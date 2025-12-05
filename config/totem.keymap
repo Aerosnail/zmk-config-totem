@@ -137,6 +137,11 @@
                 max-prior-idle-ms = <300>; 
                 bindings = <&kp K>;
             };
+            magic_ke { 
+                trigger-keys = <K>; 
+                max-prior-idle-ms = <300>; 
+                bindings = <&kp E>;
+            };
 
         };
 
