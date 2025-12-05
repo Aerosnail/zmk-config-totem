@@ -42,12 +42,6 @@
             bindings = <&kp C &kp D &kp SPACE>;
         };
 
-        ls: ls {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp S &kp SPACE>;
-        };
-
         vim: vim {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -60,10 +54,10 @@
             bindings = <&kp C &kp P &kp SPACE>;
         };
 
-        mv: mv {
+        ph: ph {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp M &kp V &kp SPACE>;
+            bindings = <&kp P &kp H>;
         };
 
     };
@@ -175,14 +169,14 @@
             key-positions = <13 3>;
         };
 
-        ls {
-            bindings = <&ls>;
-            key-positions = <11 1>;
-        };
-
         vim {
             bindings = <&vim>;
             key-positions = <12 2>;
+        };
+
+        ph {
+            bindings = <&ph>;
+            key-positions = <16 27>;
         };
 
         caps {
