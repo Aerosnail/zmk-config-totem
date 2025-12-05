@@ -134,13 +134,23 @@
 
             magic_ok { 
                 trigger-keys = <O>; 
-                max-prior-idle-ms = <300>; 
+                max-prior-idle-ms = <1000>; 
                 bindings = <&kp K>;
             };
             magic_ke { 
                 trigger-keys = <K>; 
-                max-prior-idle-ms = <300>; 
+                max-prior-idle-ms = <1000>; 
                 bindings = <&kp E>;
+            };
+            magic_ph { 
+                trigger-keys = <P>; 
+                max-prior-idle-ms = <1000>; 
+                bindings = <&kp H>;
+            };
+            magic_hy { 
+                trigger-keys = <H>; 
+                max-prior-idle-ms = <1000>; 
+                bindings = <&kp Y>;
             };
 
         };
