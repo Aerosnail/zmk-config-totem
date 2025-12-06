@@ -241,20 +241,20 @@
             display-name = "NAVI";
             //            ┗━━━━━━━┛
             //       ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
-            //       ┃ pgup┃ home┃ up  ┃ end ┃ vol+┃   ┃bri+ ┃  7  ┃  8  ┃  9  ┃     ┃
+            //       ┃ pgup┃  up ┃ pgdn┃ mute┃ vol+┃   ┃bri+ ┃  7  ┃  8  ┃  9  ┃     ┃
             //       ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
-            //       ┃ pgdn┃ left┃ down┃right┃ vol-┃   ┃bri- ┃  4  ┃  5  ┃  6  ┃  0  ┃
+            //       ┃ left┃ down┃right┃ mup ┃ vol-┃   ┃bri- ┃  4  ┃  5  ┃  6  ┃  0  ┃
             // ┏━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┓
-            // ┃BTCLR┃mleft┃mdown┃ mup ┃mrght┃ mute┃   ┃     ┃  1  ┃  2  ┃  3  ┃     ┃     ┃
+            // ┃BTCLR┃ home┃ end ┃mleft┃mdown┃mrght┃   ┃     ┃  1  ┃  2  ┃  3  ┃     ┃     ┃
             // ┗━━━━━┻━━━━━┻━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━┻━━━━━┻━━━━━┛
             //                   ┃     ┃     ┃     ┃   ┃mclk ┃lclk ┃rclk ┃
             //                   ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛
 
             bindings = <
-       &kp PG_UP      &kp HOME     &kp UP         &kp END         &kp C_VOL_UP    &kp C_BRIGHTNESS_INC &kp N7    &kp N8    &kp N9  &trans 
-       &kp PG_DN      &kp LEFT     &kp DOWN       &kp RIGHT       &kp C_VOL_DN    &kp C_BRIGHTNESS_DEC &kp N4    &kp N5    &kp N6  &kp N0
-&trans &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp K_MUTE      &trans               &kp N1    &kp N2    &kp N3  &trans   &trans
-                                     &trans       &trans          &trans          &mkp MCLK            &mkp LCLK &mkp RCLK
+       &kp PG_UP &kp UP   &kp PG_DN      &kp K_MUTE      &kp C_VOL_UP    &kp C_BRIGHTNESS_INC &kp N7    &kp N8    &kp N9  &trans 
+       &kp LEFT  &kp DOWN &kp RIGHT      &mmv MOVE_UP    &kp C_VOL_DN    &kp C_BRIGHTNESS_DEC &kp N4    &kp N5    &kp N6  &kp N0
+&trans &kp HOME  &kp END  &mmv MOVE_LEFT &mmv MOVE_DOWN  &kp MOVE_RIGHT  &trans               &kp N1    &kp N2    &kp N3  &trans   &trans
+                          &trans         &trans          &trans          &mkp MCLK            &mkp LCLK &mkp RCLK
             >;
         };
 
