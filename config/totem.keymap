@@ -50,12 +50,6 @@
             bindings = <&kp C &kp P &kp SPACE>;
         };
 
-        ph: ph {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp P &kp H>;
-        };
-
     };
 
     behaviors {
@@ -163,26 +157,25 @@
         cd {
             bindings = <&cd>;
             key-positions = <13 3>;
+            layers = <0>;
         };
 
         vim {
             bindings = <&vim>;
             key-positions = <12 2>;
-        };
-
-        ph {
-            bindings = <&ph>;
-            key-positions = <16 27>;
+            layers = <0>;
         };
 
         caps {
             bindings = <&caps_word>;
             key-positions = <33 36>;
+            layers = <0>;
         };
 
         studio_unlock {
             bindings = <&studio_unlock>;
             key-positions = <20 31>;
+            layers = <0>;
         };
     };
 
