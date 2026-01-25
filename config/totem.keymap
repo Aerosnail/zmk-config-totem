@@ -24,9 +24,7 @@
     tapping-term-ms = <170>;
 };
 
-&sk {
-    quick-release;
-};
+&sk { quick-release; };
 
 / {
     macros {
@@ -127,9 +125,10 @@
                 max-prior-idle-ms = <1000>;
                 bindings = <&kp K>;
             };
-            magic_ph { 
-                trigger-keys = <P>; 
-                max-prior-idle-ms = <1000>; 
+
+            magic_ph {
+                trigger-keys = <P>;
+                max-prior-idle-ms = <1000>;
                 bindings = <&kp H>;
             };
 
@@ -201,10 +200,10 @@
             //                   ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛
 
             bindings = <
-       &kp B        &kp L        &kp D          &kp W               &kp Z      &kp SQT  &kp F               &kp O         &kp U        &kp J
-       &hrm LGUI N  &hrm LALT R  &hrm LCTRL T   &hrm_lshft LSHFT S  &kp G      &kp Y    &hrm_rshft RSHFT H  &hrm RCTRL A  &hrm RALT E  &hrm RGUI I
-&mo 3  &kp Q        &kp X        &kp M          &kp C               &kp V      &kp K    &kp P               &kp DOT       &kp MINUS    &kp FSLH     &mo 3
-                                 &kp ESC        &lt 2 SPACE         &kp TAB    &magic   &lt_hold 1 BSPC     &kp ENTER
+       &kp B        &kp L        &kp D         &kp W        &kp Z      &kp SQT          &kp F            &kp O         &kp U        &kp J
+       &hrm LGUI N  &hrm LALT R  &hrm LCTRL T  &kp S        &kp G      &kp Y            &kp H            &hrm RCTRL A  &hrm RALT E  &hrm RGUI I
+&mo 3  &kp Q        &kp X        &kp M         &kp C        &kp V      &kp K            &kp P            &kp DOT       &kp MINUS    &kp FSLH     &mo 3
+                                 &kp ESC       &lt 2 SPACE  &kp TAB    &kp RIGHT_SHIFT  &lt_hold 1 BSPC  &kp ENTER
             >;
         };
 
